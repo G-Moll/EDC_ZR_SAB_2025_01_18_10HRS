@@ -1,0 +1,13 @@
+* {
+	font-family: Arial;
+	font-weight: normal;
+}
+
+.highlight {
+	background-color: #CCFF00;
+	color: teal;
+}
+.highlightTwo {
+	background-color: crimson;
+	color: white;
+}
