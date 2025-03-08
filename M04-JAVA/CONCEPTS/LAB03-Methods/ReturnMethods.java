@@ -7,16 +7,25 @@ public class ReturnMethods {
     public static void main( String args[] ) {
         System.out.println( "Hello Joshua!!!" );
         
-        // These functions return some value
+        // Every  variable holds the given data
+        // returned for another method
         int amount = sum();
         String message = hello();
         boolean isOld = info();
-        System.out.println( message + ", are you older than " + amount + " years..? " + isOld );
+
+        // then all results are stored in a new variable
+        String fullMessage = message + ", are you older than " + amount + " years..? " + isOld; 
         
-        // This function doesn't return something
-        noMessage();
+        // Finally a message (or more precesses are executed) is send...
+        System.out.println( fullMessage );
+
+        // Executing a method
+        // that calls more methods
+        caller();
     }
 
+    // These methods return some value
+    // those values are reused in some additional task
     public static int sum() {
         return 3 + 7;
     }
@@ -27,8 +36,16 @@ public class ReturnMethods {
         return true;
     }
 
-    public static void noMessage( ) {
-        System.out.println( "No returned data" );
+    // The void methods usually
+    // calls other methods
+    // and/or send some message
+    public static void caller( ) {
+        System.out.println(
+            "\nPRITING MANY RESULTS\n" +
+            "sum() result: " + sum() + "\n" +
+            "hello() result: " + hello() + "\n" +
+            "info() result: " + info()
+    );
     }
 
 }

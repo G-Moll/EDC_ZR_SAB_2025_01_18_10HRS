@@ -13,6 +13,7 @@ public class StaticMethods {
         messageBool();
     }
 
+    // Usually a void method is used for sending messages
     public static void messageSum() {
         System.out.println( 1 + 7 );
     }
