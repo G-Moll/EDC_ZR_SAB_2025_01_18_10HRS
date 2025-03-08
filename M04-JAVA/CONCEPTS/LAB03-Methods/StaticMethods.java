@@ -13,7 +13,7 @@ public class StaticMethods {
         messageBool();
     }
 
-    // Usually a void method is used for sending messages
+    // A static methods can be used by the current class
     public static void messageSum() {
         System.out.println( 1 + 7 );
     }

@@ -25,7 +25,7 @@ public class ReturnMethods {
     }
 
     // These methods return some value
-    // those values are reused in some additional task
+    // those results will be reused on future tasks
     public static int sum() {
         return 3 + 7;
     }
@@ -36,9 +36,10 @@ public class ReturnMethods {
         return true;
     }
 
-    // The void methods usually
-    // calls other methods
-    // and/or send some message
+    // The void methods doesn't
+    // return values
+    // Usually these methods are used for sending messages
+    // and/or execute other methods
     public static void caller( ) {
         System.out.println(
             "\nPRITING MANY RESULTS\n" +
