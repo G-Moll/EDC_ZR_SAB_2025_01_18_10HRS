@@ -26,28 +26,28 @@ JAVA LANGUAGE FEATURES
         - Reactive (Based on the PubSub/Obsever Design Pattern)
             When a state is changed, some object fires an Event
 
-        
-        OOP PILLARS
-            - Abstraction
-                - Show only essential elements
-                - Hide complexity
-            - Encapsulation
-                - The inner logic in clases is limited
-                    - private, public
-            - Inheritance
-                - A class is a base for derived classes
-                    (Bad practice)
-                    Two independent classes, duplicated data
-                        Person: name, age, address, etc
-                        Student: name, age, address, etc
-                    (Better option)
-                    Student inherits or extends from Person
-                        Person -> Student
-            - Polymorphism
-                - Animal eat( "food" )
-                - Animal -> Bird
-                - Animal -> Feline
-                - Bird -> Penguin -> eat( "fish" )
-                - Bird -> Duck -> eat( "worm" )
-                - Bird -> Seagul -> eat( "fish" )
-                - Feline -> Cat -> eat( "tuna" )
+
+    OOP PILLARS
+        - Abstraction
+            - Show only essential elements
+            - Hide complexity
+        - Encapsulation
+            - The inner logic in clases is limited
+                - private, public
+        - Inheritance
+            - A class is a base for derived classes
+                (Bad practice)
+                Two independent classes, duplicated data
+                    Person: name, age, address, etc
+                    Student: name, age, address, etc
+                (Better option)
+                Student inherits or extends from Person
+                    Person -> Student
+        - Polymorphism
+            - Animal eat( "food" )
+            - Animal -> Bird
+            - Animal -> Feline
+            - Bird -> Penguin -> eat( "fish" )
+            - Bird -> Duck -> eat( "worm" )
+            - Bird -> Seagul -> eat( "fish" )
+            - Feline -> Cat -> eat( "tuna" )
