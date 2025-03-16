@@ -1,0 +1,53 @@
+JAVA LANGUAGE FEATURES
+    DATA TYPES
+        Primitives
+            int
+            float
+        Complex
+            Strings
+            Arrys
+    
+    CLASSES
+        Are sets of:
+            - properties (variables - state)
+            - methods    (functions - behavior)
+    
+    PROGRAMMING PARADIGMS    
+        - OOP Object Oriented Programming Paradigm
+            Represent everythins as objects, objects depends on classes
+            
+        - Functional (Java 8 lambdas)
+            It works with the function flow:
+                - Data is sent to funtions
+                - Functions process those data
+                - Functions return processed data
+                - Developer use those processed data to modify the application state or behavior
+        
+        - Reactive (Based on the PubSub/Obsever Design Pattern)
+            When a state is changed, some object fires an Event
+
+        
+        OOP PILLARS
+            - Abstraction
+                - Show only essential elements
+                - Hide complexity
+            - Encapsulation
+                - The inner logic in clases is limited
+                    - private, public
+            - Inheritance
+                - A class is a base for derived classes
+                    (Bad practice)
+                    Two independent classes, duplicated data
+                        Person: name, age, address, etc
+                        Student: name, age, address, etc
+                    (Better option)
+                    Student inherits or extends from Person
+                        Person -> Student
+            - Polymorphism
+                - Animal eat( "food" )
+                - Animal -> Bird
+                - Animal -> Feline
+                - Bird -> Penguin -> eat( "fish" )
+                - Bird -> Duck -> eat( "worm" )
+                - Bird -> Seagul -> eat( "fish" )
+                - Feline -> Cat -> eat( "tuna" )
