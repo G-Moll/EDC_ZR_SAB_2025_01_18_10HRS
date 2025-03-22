@@ -1,22 +1,46 @@
-src 		main project folder
-packages    inside src folder
-Main.java 	inside src folder
+PROJECT STRUCTURE
+ELEMENT                     DETAILS
+- CustomSystem              The main project folder
+- src                       The main source code folder
+- packages (com, mx, etc)   Stored in src folder
+- Main.java                 Stored in src folder
+                            The app main entry point
 
-Nombre Inverso de Dominio
+Project Folder Structure
+📂 CustomSystem
+└───📁 src
+    └───📁 com
+    |   └───📁 rdk
+    |       └───📁 models
+    |           └───📄 Address.java
+    |           └───📄 User.java
+    └───📁 mx
+    |   └───📁 dev
+    |       └───📁 utils
+    |           └───📄 Connection.java
+    |           └───📄 Reader.java
+    └───📄 Main.java
+
+
+REVERSE DOMAIN NAME NOTATION
 www.rdk.com
 
 com.rdk.t1;
-smtp	Email.java T1
+smtp    Email.java T1
 com.rdk.t2;
-pop		Email.java T2
+pop     Email.java T2
 
 
-Packages   solo en minusculas
-    com/rdk/models          Folders   
+Packages Name conventions: lowercase & underscores
+    com/rdk/models          Folders
     com/rdk/new_models      Folders
 
     com.rdk.models          Packages
-    com.rdk.new_models      Packages  
+    com.rdk.new_models      Packages
 
-    C#
-    Java
+
+
+
+📂
+📁
+📄📃

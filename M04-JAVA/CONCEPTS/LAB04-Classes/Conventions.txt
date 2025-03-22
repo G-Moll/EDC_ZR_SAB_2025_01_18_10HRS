@@ -1,21 +1,21 @@
-Conventions: Cómo nombramos a los elementos del codigo
-    classes, interfaces: Se nombran iniciando en mayusculas
+Conventions: Names for elements on source code
+    classes, interfaces, constructors: First char on uppercase
 
-    Person.java        : Entidades (Sustantivo)
+    Person.java        : EntidadesEntities (noun)
     Classroom.java
-    IPurchase.java     : IAcciones (verbos)
+    IPurchase.java     : IAcciones (verbs)
 
     class Person {
     }
     interface IPurchase {
     }
 
-    Constructors (Methods)
+    Constructors       : are Methods
     Person() {
     }
 
     Methods
-    int purchase() {             // acciones
+    int purchase() {             // actions
     }
     int purchaseGroseries() {    //
     }
@@ -23,7 +23,7 @@ Conventions: Cómo nombramos a los elementos del codigo
     }
 
     Variables/Properties
-    String name:                 // Sustantivos
+    String name:                 // nouns
     String lastName:
     int age:
     
