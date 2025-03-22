@@ -1,0 +1,22 @@
+src 		main project folder
+packages    inside src folder
+Main.java 	inside src folder
+
+Nombre Inverso de Dominio
+www.rdk.com
+
+com.rdk.t1;
+smtp	Email.java T1
+com.rdk.t2;
+pop		Email.java T2
+
+
+Packages   solo en minusculas
+    com/rdk/models          Folders   
+    com/rdk/new_models      Folders
+
+    com.rdk.models          Packages
+    com.rdk.new_models      Packages  
+
+    C#
+    Java

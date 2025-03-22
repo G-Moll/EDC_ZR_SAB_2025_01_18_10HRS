@@ -1,0 +1,48 @@
+Conventions: Cómo nombramos a los elementos del codigo
+    classes, interfaces: Se nombran iniciando en mayusculas
+
+    Person.java        : Entidades (Sustantivo)
+    Classroom.java
+    IPurchase.java     : IAcciones (verbos)
+
+    class Person {
+    }
+    interface IPurchase {
+    }
+
+    Constructors (Methods)
+    Person() {
+    }
+
+    Methods
+    int purchase() {             // acciones
+    }
+    int purchaseGroseries() {    //
+    }
+    int purchase_groseries() {   //
+    }
+
+    Variables/Properties
+    String name:                 // Sustantivos
+    String lastName:
+    int age:
+    
+    float PI_NUMBER = 0.15f;
+
+    PascalCase
+    CamelCase
+    UpperCamelCase
+    lowerCamelCase
+    kebab-case              url  purchase-today.html
+    snake_case              mysqli_connect   
+
+
+    Packages   solo en minusculas
+    com/rdk/models          Folders   
+    com/rdk/new_models      Folders
+
+    com.rdk.models          Packages
+    com.rdk.new_models      Packages  
+
+    C#
+    Java

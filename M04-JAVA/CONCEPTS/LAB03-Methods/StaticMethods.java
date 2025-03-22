@@ -4,9 +4,20 @@ public class StaticMethods {
     int age;
     char gender;
 
+    int personName( int a, int b ) {
+        return a * b;
+    }
+    String fullName( String name, String lastname ) {
+        return name + " " + lastname;
+    }
+    boolean isApproved( float note ) {
+        return note >= 7 ? true : false ;
+    }
+    name() {
+    }
+
     public static void main( String args[] ) {
         System.out.println( "Hello Joshua!!!" );
-        
         // Run (Execute, Call, Invoke, Validate) a method
         messageSum();
         messageHello();

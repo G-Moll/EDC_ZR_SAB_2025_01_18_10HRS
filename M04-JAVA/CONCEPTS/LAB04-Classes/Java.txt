@@ -5,12 +5,12 @@ JAVA LANGUAGE FEATURES
             float
         Complex
             Strings
-            Arrys
+            Arrays
     
     CLASSES
         Are sets of:
             - properties (variables - state)
-            - methods    (functions - behavior)
+            - methods    (functions -   )
     
     PROGRAMMING PARADIGMS    
         - OOP Object Oriented Programming Paradigm
