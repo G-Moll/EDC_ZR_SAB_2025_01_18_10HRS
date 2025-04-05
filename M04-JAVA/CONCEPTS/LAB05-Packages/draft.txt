@@ -1,0 +1,118 @@
+// Main.java
+// import java.util.Arrays;
+
+// import com.rdk.models.Address;
+import com.rdk.models.User;
+
+class Main {
+    public static void main(String[] args) {        
+        // Instances: copies from classes
+
+        // Address instances
+        // Address addressOne = new Address( 1, "Liverpool", "54", "Mexico" );
+        // System.out.println( addressOne.describeAddress() );
+        
+        // Address addressTwo = new Address( 2, "Nuevo Leon", "15", "Francia" );
+        // System.out.println( addressTwo.describeAddress() );
+
+        // Address addressBis = new Address( 3, "Tamaulipas", "30", "EU" );
+        // System.out.println( addressBis.describeAddress() );
+
+        // User instances
+        User userOne = new User( 1, "Joshua", "Perez", 30 );
+        System.out.println( userOne.describeUser() );
+        userOne.registerAddress( "Home", "Liverpool", "154", "MX" );
+        userOne.registerAddress( "Job", "Londres", "20", "MX" );
+        System.out.println( userOne.addresses[ 1 ].describeAddress() );
+        System.out.println( userOne.addresses[ 0 ].describeAddress() );
+        // System.out.println( userOne instanceof User );
+        // System.out.println( userOne.addresses[ 0 ] instanceof Address );
+        // System.out.println( userOne.addresses[ 1 ] instanceof Address );
+        // System.out.println( Arrays.toString( userOne.addresses ) );
+
+        User userTwo = new User( 2, "Paul", "Hernandez", 40 );
+        System.out.println( userTwo.describeUser() );
+        userTwo.registerAddress( "Home", "Puebla", "14", "MX" );
+        userTwo.registerAddress( "Job", "Frontera", "28", "MX" );
+        System.out.println( userTwo.addresses[ 0 ].describeAddress() );
+        System.out.println( userTwo.addresses[ 1 ].describeAddress() );
+        
+
+        // User userBis = new User( 3, "Peter", "Smith", 55 );
+        // System.out.println( userTwo.describeUser() );
+        // System.out.println( userBis.describeUser() );
+    }
+}
+
+
+
+
+// Address.java
+package com.rdk.models;
+
+public class Address {
+    String type;
+    String streetName;
+    String streetNumber;
+    String country;
+
+    // Constructor method
+    public Address( String type, String streetName, String streetNumber, String country ) {
+        this.type         = type;
+        this.streetName   = streetName;
+        this.streetNumber = streetNumber;
+        this.country      = country;
+    }
+
+    // Methods
+    public String describeAddress() {
+        return "id: " + this.type + 
+            ": The full adddres is, country " + this.country +
+            ", the street is " + this.streetName +
+            " number " +  this.streetNumber;
+    }
+}
+
+
+
+// User.java
+package com.rdk.models;
+// import com.rdk.models.Address;
+
+public class User {
+    int id;
+    String name;
+    String lastname;
+    int age;
+    public Address[] addresses = new Address[ 2 ]; 
+
+    public User( int id, String name, String lastname, int age ) {
+        this.id       = id;
+        this.name     = name;
+        this.lastname = lastname;
+        this.age      = age;
+    }
+
+    public String describeUser() {
+        return "id: "     + this.id +
+            ", name "     + this.name +
+            ", lastname " + this.lastname +
+            ", age "      + this.age;
+    }
+
+    public void registerAddress( String type, String streetName, String streetNumber, String country ) {
+        Address tempAddress = new Address( type, streetName, streetNumber, country );
+        if( type.equals( "Job" ) ) {
+            this.addresses[ 0 ] = tempAddress;
+        }
+        else {
+            this.addresses[ 1 ] = tempAddress;
+        }
+    }
+
+}
+
+
+
+
+
