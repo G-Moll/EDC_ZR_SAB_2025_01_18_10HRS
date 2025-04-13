@@ -13,8 +13,6 @@ public class StaticMethods {
     boolean isApproved( float note ) {
         return note >= 7 ? true : false ;
     }
-    name() {
-    }
 
     public static void main( String args[] ) {
         System.out.println( "Hello Joshua!!!" );
