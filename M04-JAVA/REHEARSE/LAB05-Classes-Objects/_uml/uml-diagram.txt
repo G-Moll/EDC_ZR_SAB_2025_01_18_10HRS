@@ -1,0 +1,14 @@
+Project Folder Structure
+📂 LAB05-Classes-Objects
+└───📁 src
+    └───📁 com
+    |   └───📁 rdk
+    |       └───📁 utils
+    |           └───📄 FileUtility.java
+    |           └───📄 UtilityBase.java
+    |           └───📄 UtilityReader.java
+    |           └───📄 UtilityWriter.java
+    └───📁 data
+    |   └───📄 file.txt
+    └───📄 Main.java
+

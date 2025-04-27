@@ -1,0 +1,13 @@
+UML (Unified Model Language)
+
+Asociaciones de Clases
+Se representan con líneas
+    - Tipo (Acciones entre clases)
+
+    - Direccionalidad (a > b, a < b)
+        School    Enseña >    Student
+        School    < Estudia   Student
+
+    - Multiplicidad
+        School (1)----(*) Student
+        Uno               Muchos
