@@ -16,17 +16,17 @@ class UtilityReader extends UtilityBase {
     void fileRead() {
         try {
             this.timestampStart();
-            fileReader = new FileReader( filePath );
-            bufferedReader = new BufferedReader( fileReader );
-            String currentLine = bufferedReader.readLine();
+            this.fileReader = new FileReader( this.filePath );
+            this.bufferedReader = new BufferedReader( this.fileReader );
+            String currentLine = this.bufferedReader.readLine();
 
             int numberLine = 1;
             while( currentLine != null ) {
                 System.out.println( "Line " + numberLine + ": " + currentLine );
-                currentLine = bufferedReader.readLine();
+                currentLine = this.bufferedReader.readLine();
                 numberLine ++;
             }
-            bufferedReader.close();
+            this.bufferedReader.close();
             this.timestampStop();
             this.timestampDescription( "Reading time" );
         }

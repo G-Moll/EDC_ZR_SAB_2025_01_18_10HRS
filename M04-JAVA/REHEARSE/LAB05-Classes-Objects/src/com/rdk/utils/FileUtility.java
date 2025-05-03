@@ -65,8 +65,8 @@ public class FileUtility {
         System.out.println( "taskWrite...." );
     }
     public static void taskRead() {
-        utilityReader.fileRead();;
-        System.out.println( "taskRead...." );
+        utilityReader.fileRead();
+        // System.out.println( "taskRead...." );
     }
     public static void taskDisplayToggle() {
         System.out.println( "taskDisplayToggle...." );
