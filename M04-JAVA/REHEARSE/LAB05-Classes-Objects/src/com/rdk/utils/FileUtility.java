@@ -10,10 +10,10 @@ public class FileUtility {
     
     public static void taskStart() {
         String startMessage = "" +
-        "OPCIONES" +
-        " - Registar (1)" +
-        " - Mostrar (2)" +
-        " - Salir (0)";
+            "OPCIONES" +
+            " - Registar (1)" +
+            " - Mostrar (2)" +
+            " - Salir (0)";
         System.out.println( startMessage );
         
         int choice = scanner.nextInt();
@@ -34,10 +34,28 @@ public class FileUtility {
         }
     }
     public static void taskRetry() {
-        System.out.println( "taskRetry...." );
+        String retryMessage = "" +
+            "REINTENTAR" +
+            " - SI (1)" +
+            " - NO (0)";
+        System.out.println( retryMessage );
+
+        int choice = scanner.nextInt();
+
+        switch( choice ) {
+            case 0:
+                taskEnd();
+                break;
+            case 1:
+                taskStart();
+                break;
+            default:
+                taskRetry();
+        }
     }
     public static void taskEnd() {
         System.out.println( "taskEnd...." );
+        scanner.close();
     }
     public static String taskInput() {
         System.out.println( "taskInput...." );
