@@ -3,11 +3,11 @@ package com.rdk.utils;
 import java.util.Scanner;
 
 public class FileUtility {
-    String filePath = "data/file.txt";
+    static String filePath = "data/file.txt";
     static Scanner scanner = new Scanner( System.in );
-    UtilityReader utilityReader = new UtilityReader( filePath );
-    UtilityWriter utilityWriter = new UtilityWriter( filePath );
-    
+    static UtilityWriter utilityWriter = new UtilityWriter( filePath );
+    static UtilityReader utilityReader = new UtilityReader( filePath );
+
     public static void taskStart() {
         String startMessage = "" +
             "OPCIONES" +
@@ -65,6 +65,7 @@ public class FileUtility {
         System.out.println( "taskWrite...." );
     }
     public static void taskRead() {
+        // utilityReader.fileRead();
         System.out.println( "taskRead...." );
     }
     public static void taskDisplayToggle() {
