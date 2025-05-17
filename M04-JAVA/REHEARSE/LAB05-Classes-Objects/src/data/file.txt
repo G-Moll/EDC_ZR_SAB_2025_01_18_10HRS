@@ -1,15 +1,6 @@
-Joshua 30
-Peter 50
-Andrew 25
-Joshua 30
-Peter 50
-Andrew 25
-Joshua 30
-Peter 50
-Andrew 25
-Joshua 30
-Peter 50
-Andrew 25
-Joshua 30
-Peter 50
-Andrew 25
+Joshua, Olmedo, 30
+Rene, Ordonez, 47
+Rene, Ordonez, 47
+Juan, Olmedo, 20
+John, Connor, 30
+Sarah, Connor, 35

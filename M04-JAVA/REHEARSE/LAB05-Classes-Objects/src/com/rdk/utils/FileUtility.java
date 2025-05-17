@@ -1,5 +1,6 @@
 package com.rdk.utils;
 
+import java.text.MessageFormat;
 import java.util.Scanner;
 
 public class FileUtility {
@@ -58,15 +59,32 @@ public class FileUtility {
         scanner.close();
     }
     public static String taskInput() {
-        System.out.println( "taskInput...." );
-        return "";
+        String name;
+        String lastname;
+        String age;
+        String dataString;
+
+        System.out.println( "NUEVO REGISTRO" );
+        System.out.print( "Nombre: " );
+        name = scanner.next();
+        
+        System.out.print( "Apellido: " );
+        lastname = scanner.next();
+
+        System.out.print( "Edad: " );
+        age = scanner.next();
+
+        dataString = MessageFormat.format( "{0}, {1}, {2}", name, lastname, age );
+
+        return dataString;
     }
     public static void taskWrite() {
-        System.out.println( "taskWrite...." );
+        utilityWriter.fileWrite( taskInput() );
+        taskStart();
     }
     public static void taskRead() {
         utilityReader.fileRead();
-        // System.out.println( "taskRead...." );
+        taskStart();
     }
     public static void taskDisplayToggle() {
         System.out.println( "taskDisplayToggle...." );
