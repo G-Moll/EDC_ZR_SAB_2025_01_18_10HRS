@@ -1,5 +1,14 @@
 *.exe
 *.class
+*.bat
+*.sh
 
 */*.exe
 */*.class
+*/*.bat
+*/*.sh
+
+**/*.exe
+**/*.class
+**/*.bat
+**/*.sh
